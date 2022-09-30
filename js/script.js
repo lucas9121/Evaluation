@@ -17,3 +17,10 @@ const Api = (() => {
 
 console.log(fetch(baseURL))
 console.log(Api.getUser())
+
+
+///////////////////////////// VIEW ///////////////////////////
+
+const View =(() => {
+    return {}
+})()
