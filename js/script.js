@@ -129,8 +129,13 @@ Controller.run()
 
 ///// button works but there is a delay
 
-const refresh = document.querySelector('#refresh')
+const refresh = document.querySelector('#refresh > button')
+const timer = document.querySelector('#refresh > span')
 refresh.addEventListener('click', () =>{
-    console.log('clicked')
+    timer.innerHTML = 3
+    for (let i = 1; i < 3; i++) {
+        setTimeout(() => timer.innerHTML = i, (3 - i) * 1000);
+    }
+    setTimeout(() => {timer.innerHTML = ''}, 3000)
     Controller.run()
 })
