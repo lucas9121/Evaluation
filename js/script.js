@@ -127,3 +127,13 @@ const Controller = ((model, view) => {
 })(Model)
 
 Controller.run()
+
+
+
+///// button works but there is a delay
+
+const refresh = document.querySelector('#refresh')
+refresh.addEventListener('click', () =>{
+    console.log('clicked')
+    Controller.run()
+})
