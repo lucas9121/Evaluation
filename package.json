@@ -2,7 +2,7 @@
 	"name": "json-server",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "js/script.js",
 	"dependencies": {
 		"json-server": "^0.16.3"
 	},
