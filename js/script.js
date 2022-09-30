@@ -24,3 +24,12 @@ console.log(Api.getUser())
 const View =(() => {
     return {}
 })()
+
+///////////////////////////// MODEL ///////////////////////////
+
+const Model = ((api) => {
+    const {getUser} = api
+
+    return {getUser}
+
+})(Api)
