@@ -6,6 +6,10 @@ body{
     margin: 0;
     padding: 0;
 }
+
+h1{
+    text-align: center;
+}
 main{
     height: calc(100vh - 5vh);
     display: flex;
