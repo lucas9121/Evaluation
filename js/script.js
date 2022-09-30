@@ -1,4 +1,6 @@
-console.log('testing JS')
+
+
+///////////////////////////////////////// PAGE LOADS AFTER A FEW SECONDS DELAY ////////////////////////////////////
 
 ///////////////////////////// API ///////////////////////////
 
@@ -38,9 +40,9 @@ const View =(() => {
                 <li>
                     <img src= " ${ele.picture.large}" alt="">
                     <div class="userInfo">
-                        <span>${ele.name.title}. ${ele.name.last}</span>
-                        <span>${ele.email}</span>
-                        <span>${ele.cell}</span>
+                        <span>name: ${ele.name.title}. ${ele.name.last}</span>
+                        <span>email: ${ele.email}</span>
+                        <span>phone: ${ele.cell}</span>
                         <button>Show Dob</button>
                     </div>
                 </li>
@@ -67,15 +69,10 @@ const Model = ((api, view) => {
         }
 
         set userList(newUserList) {
-            // console.log('set part')
             this.#userList = newUserList
             const usersContainer = document.querySelector(view.domStr.usersContainer)
-            // console.log(usersContainer)
             let tmplt = []
-            // for(let i = 0; i < 5; i++){
                 tmplt += view.createTmplt(this.#userList)
-            // }
-            // console.log(tmplt)
             View.render(usersContainer, tmplt)
         }
     }
