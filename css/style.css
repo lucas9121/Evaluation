@@ -47,4 +47,9 @@ main::-webkit-scrollbar {
 .userInfo{
     display: flex;
     flex-direction: column;
+    gap: 3px;
+}
+
+.userInfo > button {
+    cursor: pointer;
 }

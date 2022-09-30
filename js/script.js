@@ -41,7 +41,6 @@ const View =(() => {
                         <span>${ele.name.title}. ${ele.name.last}</span>
                         <span>${ele.email}</span>
                         <span>${ele.cell}</span>
-                        <span>${ele.dob.date}</span>
                         <button>Show Dob</button>
                     </div>
                 </li>
