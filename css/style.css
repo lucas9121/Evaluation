@@ -75,7 +75,12 @@ main::-webkit-scrollbar {
     gap: 3px;
 }
 
-.userInfo > button {
+.userInfo > .dobDiv{
+    width: fit-content;
+    cursor: pointer;
+}
+
+.dobDiv > button {
     cursor: pointer;
 }
 
